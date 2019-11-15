@@ -9,10 +9,19 @@ class NamaTest < Minitest::Test
     assert true # Now I checked this :)
   end
 
+  def test_correct_interval
+    Nama.set_interval 0..50
+    assert_instance_of Range, Nama.interval
+  end
+
+  def test_invalid_interval
+    error = assert_raises(TypeError) { Nama.set_interval 100 }
+    assert_equal error.message, 'Interval must be an Enumerator'
+  end
+
   def test_that_extract_texts
     output = File.read "test/output.txt"
-    assert_equal Nama.extract_text, output
-
+    assert_output (output) { Nama.extract_text }
   end
 
 end
