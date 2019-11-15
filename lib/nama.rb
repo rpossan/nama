@@ -15,7 +15,7 @@ module Nama
   end
 
   def self.extract_text
-    extract_from 1..100
+    extract_from self.interval
   end
 
   def self.extract_from(interval)
