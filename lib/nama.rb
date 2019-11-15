@@ -1,4 +1,5 @@
 require "nama/version"
+require "nama/classificator"
 
 module Nama
   class Error < StandardError; end
@@ -27,8 +28,8 @@ module Nama
   def self.get_label(number)
     return 'Nama Team' if number.remainder(35).zero?
     return 'Team' if number.remainder(7).zero?
-    return 'Nama' if number.remainder(5).zero?
+    return 'Nama' if number.remainder(Classificator::VALUES[:nama].to_i).zero?
 
-    number
+    return number
   end
 end
