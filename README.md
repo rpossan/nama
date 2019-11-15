@@ -1,38 +1,21 @@
-# Nama
+# Nama - Backend Evaluation Problem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nama`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a project to evaluate the backend Nama problem.
+I implemented a ruby gem library that test the extract of labels from interval as the requirement.
+I tried to use the best practices for a backend project and all methods are tested. I choose minitest as the test framework because has the simplest setup.
+The project was developed under git flow and pull request made the atomic commits on master branch
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Checkout the code and then execute:
 
 ```ruby
-gem 'nama'
+rake test
 ```
 
-And then execute:
+Or try running on a docker container:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install nama
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nama. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+    $ docker build -t nama .  
 
 ## License
 
