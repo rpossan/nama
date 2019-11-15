@@ -8,4 +8,11 @@ class NamaTest < Minitest::Test
   def test_it_does_something_useful
     assert true # Now I checked this :)
   end
+
+  def test_that_extract_texts
+    output = File.read "test/output.txt"
+    assert_equal Nama.extract_text, output
+
+  end
+
 end
