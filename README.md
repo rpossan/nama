@@ -10,6 +10,7 @@ The project was developed under git flow and pull request made the atomic commit
 Checkout the code and then execute:
 
 ```ruby
+bundle install
 rake test
 ```
 
