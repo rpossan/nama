@@ -3,7 +3,13 @@
 This is a project to evaluate the backend Nama problem.
 I implemented a ruby gem library that test the extract of labels from interval as the requirement.
 I tried to use the best practices for a backend project and all methods are tested. I choose minitest as the test framework because has the simplest setup.
-The project was developed under git flow and pull request made the atomic commits on master branch
+The project was developed under git flow and pull request made the atomic commits on master branch.
+
+100% test coverage:
+![](https://github.com/rpossan/files/blob/master/nama/coverage.png)
+
+100% free of smell code following the comunity convention (using Rubocop tool):
+![](https://github.com/rpossan/files/blob/master/nama/code.png)
 
 ## Installation
 
