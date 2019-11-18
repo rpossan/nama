@@ -16,6 +16,7 @@ class NamaTest < Minitest::Test
 
   def test_correct_interval
     Nama.set_interval 1..50
+    refute_nil ::Nama::interval
     assert_instance_of Range, Nama.interval
   end
 
@@ -26,7 +27,7 @@ class NamaTest < Minitest::Test
 
   def test_that_extract_texts
     Nama.set_interval 1..100
-    assert_output (@output) { Nama.extract_text }
+    assert_output(@output) { Nama.extract_text }
   end
 
 end
