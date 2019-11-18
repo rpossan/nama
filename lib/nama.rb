@@ -25,10 +25,10 @@ module Nama
   end
 
   def self.get_label(number)
-    return 'Nama Team' if number.remainder(35).zero?
-    return 'Team' if number.remainder(7).zero?
-    return 'Nama' if number.remainder(5).zero?
+    return 'Nama Team' if number.remainder(Classificator::VALUES[:nama_team]).zero?
+    return 'Team' if number.remainder(Classificator::VALUES[:team]).zero?
+    return 'Nama' if number.remainder(Classificator::VALUES[:nama]).zero?
 
-    return number
+    return number 
   end
 end

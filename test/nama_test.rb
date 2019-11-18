@@ -1,6 +1,11 @@
 require "test_helper"
 
 class NamaTest < Minitest::Test
+
+  def setup
+    @output = File.read "test/output.txt"
+  end
+
   def test_that_it_has_a_version_number
     refute_nil ::Nama::VERSION
   end
@@ -10,7 +15,7 @@ class NamaTest < Minitest::Test
   end
 
   def test_correct_interval
-    Nama.set_interval 0..50
+    Nama.set_interval 1..50
     assert_instance_of Range, Nama.interval
   end
 
@@ -20,8 +25,8 @@ class NamaTest < Minitest::Test
   end
 
   def test_that_extract_texts
-    output = File.read "test/output.txt"
-    assert_output (output) { Nama.extract_text }
+    Nama.set_interval 1..100
+    assert_output (@output) { Nama.extract_text }
   end
 
 end
