@@ -1,4 +1,5 @@
 require "nama/version"
+require "nama/classificator"
 
 module Nama
   class Error < StandardError; end
