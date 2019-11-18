@@ -2,6 +2,8 @@
   "Unit Tests": {
     "coverage": {
       "/home/ronaldo/nama/lib/nama.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -12,6 +14,9 @@
         null,
         1,
         3,
+        1,
+        null,
+        null,
         2,
         null,
         null,
@@ -31,6 +36,7 @@
         null,
         1,
         100,
+        100,
         98,
         86,
         null,
@@ -39,12 +45,13 @@
         null
       ],
       "/home/ronaldo/nama/lib/nama/classificator.rb": [
-        1,
-        1,
         null,
+        null,
+        1,
+        1,
         null
       ]
     },
-    "timestamp": 1574087844
+    "timestamp": 1574090660
   }
 }
